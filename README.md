@@ -19,13 +19,13 @@ sudo npm i in frontend folder
 
 Change localhost to desired IP in .env file in backend + frontend folder
 
-make .env file in backend/ and paste this:
+create an .env file in backend/ and paste this:
 HOST=0.0.0.0
 PORT=1337
 URL=http://localhost:1337
 API_AUTH_URL=http://localhost:1337
 
-make .env file in frontend/ and paste this:
+create an .env file in frontend/ and paste this:
 NEXT_PUBLIC_API_URL=http://localhost:1337
 NEXT_PUBLIC_DATABASE_URL=postgres://strapi:strapi@localhost:5432/check-the-test?synchronize=true
 NEXTAUTH_URL=http://localhost:3000
@@ -35,14 +35,18 @@ Npm run build in backend/ and frontend/
 
 The first step to run the postgresql database by running this command:
 docker-compose up -d
+
 The next step is to run Strapi. First go to the backend directory with cd backend/ and then run Strapi by using this command: 
 pm2 start “npm run develop” 
+
 if the user wants to run the Strapi database in production mode, use the following command:
 pm2 start “npm run production” 
+
 After running Strapi, the next step is to run the frontend. Go to the frontend directory with cd frontend/ and then run the command:
-Pm2 start “npm run dev”
+pm2 start “npm run dev”
 
-
+To check if docker-compose up -d is working use: docker ps
+To check if the backend and frontend are working use: pm2 ps
 
 
 
