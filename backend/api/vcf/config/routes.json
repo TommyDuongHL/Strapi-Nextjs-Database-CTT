@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vcfs",
+      "handler": "vcf.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vcfs/count",
+      "handler": "vcf.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vcfs/:id",
+      "handler": "vcf.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vcfs",
+      "handler": "vcf.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vcfs/:id",
+      "handler": "vcf.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vcfs/:id",
+      "handler": "vcf.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

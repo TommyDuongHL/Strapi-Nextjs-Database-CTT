@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/study-accessions",
+      "handler": "study-accession.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/study-accessions/count",
+      "handler": "study-accession.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/study-accessions/:id",
+      "handler": "study-accession.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/study-accessions",
+      "handler": "study-accession.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/study-accessions/:id",
+      "handler": "study-accession.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/study-accessions/:id",
+      "handler": "study-accession.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

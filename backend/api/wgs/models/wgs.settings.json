@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wgs",
+  "info": {
+    "name": "wgs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fastq": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "experiment_accession": {
+      "via": "wg",
+      "model": "experiment-accession"
+    },
+    "study_accession": {
+      "via": "wgs",
+      "model": "study-accession"
+    },
+    "sample_accession": {
+      "via": "wg",
+      "model": "sample-accession"
+    }
+  }
+}

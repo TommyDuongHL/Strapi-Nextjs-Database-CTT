@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiment-accession",
+  "info": {
+    "name": "experiment_accession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "experiment_accession": {
+      "type": "uid"
+    },
+    "Instument_Platform": {
+      "type": "string"
+    },
+    "Instrument_Model": {
+      "type": "string"
+    },
+    "wg": {
+      "via": "experiment_accession",
+      "model": "wgs"
+    },
+    "study_accession": {
+      "via": "experiment_accessions",
+      "model": "study-accession"
+    },
+    "sample_accession": {
+      "model": "sample-accession",
+      "via": "experiment_accessions"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gts",
+  "info": {
+    "name": "GT",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "genotyping": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "study_accession": {
+      "via": "gts",
+      "model": "study-accession"
+    }
+  }
+}

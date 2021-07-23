@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vcfs",
+  "info": {
+    "name": "vcf",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "organism": {
+      "type": "string",
+      "required": true
+    },
+    "center_name": {
+      "type": "string",
+      "required": true
+    },
+    "VCF": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "study_accession": {
+      "via": "vcfs",
+      "model": "study-accession"
+    },
+    "analysis_accession": {
+      "via": "vcf",
+      "model": "analysis"
+    },
+    "VEP": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

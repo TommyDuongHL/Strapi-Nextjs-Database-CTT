@@ -1,0 +1,132 @@
+{
+    "id": 1,
+    "study_title": "Check The Test LCAB",
+    "center_name": "LCAB",
+    "study_name": "Check The Test",
+    "description": "test",
+    "study_accession": "PRJEB17529",
+    "created_at": "2021-05-12T21:58:23.578Z",
+    "updated_at": "2021-05-16T18:08:41.331Z",
+    "sample_accessions": [
+        {
+            "id": 1,
+            "study_accession": 1,
+            "organism": "Homo sapiens (human)",
+            "taxon_id": "9606",
+            "sample_accession": "SAMEA4545245",
+            "wg": 2,
+            "created_at": "2021-05-12T21:57:46.824Z",
+            "updated_at": "2021-05-16T18:54:29.115Z"
+        },
+        {
+            "id": 2,
+            "study_accession": 1,
+            "organism": "Homo sapiens (human)",
+            "taxon_id": "9606",
+            "sample_accession": "SAMEA4545246",
+            "wg": 1,
+            "created_at": "2021-05-12T21:58:00.031Z",
+            "updated_at": "2021-05-16T18:55:31.159Z"
+        }
+    ],
+    "experiment_accessions": [
+        {
+            "id": 1,
+            "experiment_accession": "ERX1796409",
+            "Instument_Platform": "ILLUMINA",
+            "Instrument_Model": "HiSeq X Ten",
+            "wg": 1,
+            "study_accession": 1,
+            "created_at": "2021-05-12T21:57:32.252Z",
+            "updated_at": "2021-05-16T18:55:31.158Z",
+            "sample_accession": 1
+        },
+        {
+            "id": 2,
+            "experiment_accession": "ERX1796410",
+            "Instument_Platform": "ILLUMINA",
+            "Instrument_Model": "HiSeq X Ten",
+            "wg": 2,
+            "study_accession": 1,
+            "created_at": "2021-05-12T21:57:38.358Z",
+            "updated_at": "2021-05-16T18:54:29.114Z",
+            "sample_accession": 2
+        }
+    ],
+    "gts": [],
+    "analyses": [],
+    "vcfs": [],
+    "wgs": [
+        {
+            "id": 1,
+            "experiment_accession": 1,
+            "study_accession": 1,
+            "sample_accession": 2,
+            "created_at": "2021-05-12T21:58:48.606Z",
+            "updated_at": "2021-05-16T18:55:31.162Z",
+            "fastq": [
+                {
+                    "id": 1,
+                    "name": "testWGS.txt",
+                    "alternativeText": "",
+                    "caption": "",
+                    "width": null,
+                    "height": null,
+                    "formats": null,
+                    "hash": "test_WGS_4e4240e580",
+                    "ext": ".txt",
+                    "mime": "text/plain",
+                    "size": 0.01,
+                    "url": "/uploads/test_WGS_4e4240e580.txt",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-05-12T21:58:46.343Z",
+                    "updated_at": "2021-05-12T21:58:46.360Z"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "experiment_accession": 2,
+            "study_accession": 1,
+            "sample_accession": 1,
+            "created_at": "2021-05-12T22:40:15.981Z",
+            "updated_at": "2021-05-16T18:54:29.121Z",
+            "fastq": [
+                {
+                    "id": 2,
+                    "name": "testVCF.txt",
+                    "alternativeText": "",
+                    "caption": "",
+                    "width": null,
+                    "height": null,
+                    "formats": null,
+                    "hash": "test_VCF_d87b871083",
+                    "ext": ".txt",
+                    "mime": "text/plain",
+                    "size": 0.01,
+                    "url": "/uploads/test_VCF_d87b871083.txt",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-05-12T22:40:14.254Z",
+                    "updated_at": "2021-05-12T22:40:14.263Z"
+                }
+            ]
+        }
+    ],
+    "owners": [
+        {
+            "id": 1,
+            "username": "xaikumeep",
+            "email": "xaikumeep@gmail.com",
+            "provider": "google",
+            "confirmed": true,
+            "blocked": null,
+            "role": 1,
+            "created_at": "2021-05-16T18:07:47.397Z",
+            "updated_at": "2021-05-16T18:07:47.404Z"
+        }
+    ]
+}

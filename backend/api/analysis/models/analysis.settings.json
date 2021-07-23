@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analyses",
+  "info": {
+    "name": "analysis_accession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "analysis_type": {
+      "type": "string",
+      "required": true
+    },
+    "center_name": {
+      "type": "string",
+      "required": true
+    },
+    "study_accession": {
+      "via": "analyses",
+      "model": "study-accession"
+    },
+    "sample_accession": {
+      "model": "sample-accession"
+    },
+    "vcf": {
+      "via": "analysis_accession",
+      "model": "vcf"
+    },
+    "analysis_accession": {
+      "type": "uid"
+    }
+  }
+}

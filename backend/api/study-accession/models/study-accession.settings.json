@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "study_accessions",
+  "info": {
+    "name": "study_accession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "study_title": {
+      "type": "string",
+      "required": true
+    },
+    "center_name": {
+      "type": "string",
+      "required": true
+    },
+    "study_name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "sample_accessions": {
+      "via": "study_accession",
+      "collection": "sample-accession"
+    },
+    "experiment_accessions": {
+      "via": "study_accession",
+      "collection": "experiment-accession"
+    },
+    "gts": {
+      "via": "study_accession",
+      "collection": "gt"
+    },
+    "analyses": {
+      "via": "study_accession",
+      "collection": "analysis"
+    },
+    "vcfs": {
+      "via": "study_accession",
+      "collection": "vcf"
+    },
+    "wgs": {
+      "via": "study_accession",
+      "collection": "wgs"
+    },
+    "study_accession": {
+      "type": "uid"
+    },
+    "owners": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

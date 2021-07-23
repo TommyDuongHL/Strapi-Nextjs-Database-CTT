@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sample_accessions",
+  "info": {
+    "name": "sample_accession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "study_accession": {
+      "via": "sample_accessions",
+      "model": "study-accession"
+    },
+    "organism": {
+      "type": "string",
+      "required": true
+    },
+    "taxon_id": {
+      "type": "string",
+      "required": true
+    },
+    "sample_accession": {
+      "type": "uid"
+    },
+    "wg": {
+      "via": "sample_accession",
+      "model": "wgs"
+    },
+    "experiment_accessions": {
+      "via": "sample_accession",
+      "collection": "experiment-accession"
+    }
+  }
+}
